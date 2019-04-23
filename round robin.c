@@ -112,13 +112,7 @@ void schedule()
 		np = getNextProcess();
 		if(np == -1)
 		{
-			/*
-			here if there is no process in waiting qeue
-			which mean the process get IDLe state.
-			here in this program we put -1 in scheduler[time]
-			which mean that the processor get IDLE in this time.
 			
-			*/
 			scheduler[time] = -1;
 			time++;
 			addArrivedProcessesToQeue();
